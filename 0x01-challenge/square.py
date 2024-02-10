@@ -3,12 +3,10 @@
 
 
 class square():
-    """ make the class square"""
-    
+    """ make the class square"""    
     width = 0
     height = 0
 
-    
     def __init__(self, *args, **kwargs):
         """ constructor of the class"""
         for key, value in kwargs.items():
@@ -25,6 +23,7 @@ class square():
     def __str__(self):
         """ the string of the square"""
         return "{}/{}".format(self.width, self.height)
+
 
 if __name__ == "__main__":
     """main function"""
